@@ -1,0 +1,38 @@
+\documentclass{beamer}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont{calibri.ttf}
+%\usepackage{hyperref}
+
+% +++ Load theme from subfolder +++
+% thanks to 'Symbol 1'@SE:
+% https://tex.stackexchange.com/questions/275600/beamer-themes-on-custom-folder/284157#284157
+\makeatletter
+\def\beamer@calltheme#1#2#3{%
+	\def\beamer@themelist{#2}
+	\@for\beamer@themename:=\beamer@themelist\do
+	{\usepackage[{#1}]{\beamer@themelocation/#3\beamer@themename}}}
+
+\def\usefolder#1{
+	\def\beamer@themelocation{#1}
+}
+\def\beamer@themelocation{}
+
+\usefolder{theme}
+\usetheme{jlug}
+% --- End: Complicated theme loading  ---
+
+
+\title{There shall be no ugly slides}
+\date[Conference '00]{0th Conference of Conference Titles}
+\author[Shortname]{Full Name \texttt{mailto:your.email@re.ss}}
+
+\begin{document}
+https://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch
+\begin{frame}
+\titlepage
+
+\end{frame}
+
+\end{document}
