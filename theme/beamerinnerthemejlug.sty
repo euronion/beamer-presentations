@@ -1,5 +1,6 @@
 \mode<presentation>
 
+
 % standard pages
 \setbeamertemplate{background}{
   \begin{tikzpicture}
@@ -13,21 +14,56 @@
 }
 
 % Title page
-\defbeamertemplate*{title page}{texsx}[1][]
-{ 
-   \vskip57mm%
-    \begin{beamercolorbox}[wd=245mm,leftskip=18mm,sep=52pt,#1, left]{title page header}
-      \usebeamerfont{title}\inserttitle\par%
-    \end{beamercolorbox}%
-    \vskip0.75cm%
-    \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
-      \usebeamerfont{author}\insertauthor%
-    \end{beamercolorbox}
-     \vskip0.2cm%
-    \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{date}
-      \usebeamerfont{author}\insertdate%
-    \end{beamercolorbox}
-  \vfill
+\defbeamertemplate*{title page}{jlug}[1][]
+{  	\vskip59.5mm%
+	\begin{beamercolorbox}[wd=245mm, left, #1]{author}
+		\hspace{9mm}\usebeamerfont{author}\insertauthor\ | \insertinstitute\ %
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[wd=245mm, left, #1]{date}
+		\hspace{9mm}\usebeamerfont{author}\insertdate%
+	\end{beamercolorbox}
+	\vskip0.3cm%
+	\begin{beamercolorbox}[wd=245mm,#1,left]{title page header}
+		\hspace{9mm}\usebeamerfont{title}\inserttitle\par%
+		\hspace{9mm}\usebeamerfont{title}\insertsubtitle\par%
+	\end{beamercolorbox}%
+	\vfill
+}
+
+%% Title page
+%\defbeamertemplate*{title page}{texsx}[1][]
+%{  \setbeamertemplate{navigation symbols}{} % not footline on front page
+%   \vskip69mm%
+%    \begin{beamercolorbox}[wd=245mm,ht=27mm,leftskip=18mm,sep=9mm,#1,left]{title page header}
+%      \usebeamerfont{title}\inserttitle\par%
+%      \usebeamerfont{title}\insertsubtitle\par%
+%    \end{beamercolorbox}%
+%    \vskip0.75cm%
+%    \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
+%      \usebeamerfont{author}\insertauthor%
+%    \end{beamercolorbox}
+%     \vskip0.2cm%
+%    \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{date}
+%      \usebeamerfont{author}\insertdate%
+%    \end{beamercolorbox}
+%  \vfill
+%}
+
+\setbeamertemplate{frametitle}{
+%	\ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+	\@tempdima=\textwidth%
+	\advance\@tempdima by\beamer@leftmargin%
+	\advance\@tempdima by\beamer@rightmargin%
+%	\hspace*{1cm} %%%%%%%%%%%%% For example insert shift to right
+	\begin{beamercolorbox}[sep=0.9cm,left,wd=\the\paperwidth]{frame title}
+		\usebeamerfont{frametitle}%
+		\vbox{}\vskip-1ex%
+		\if@tempswa\else\csname beamer@ftecenter\endcsname\fi%
+		\strut\expandafter\MakeUppercase\expandafter{\insertframetitle}\strut\par%
+%		\strut\insertframetitle\strut\par%
+		\vskip-1ex%
+%		\if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+	\end{beamercolorbox}%
 }
 
 \mode
