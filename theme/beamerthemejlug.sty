@@ -8,14 +8,25 @@
 \RequirePackage{tikz}
 
 % Settings
+\usecolortheme{jlug}	% Colors
 \useinnertheme{jlug}
 \useoutertheme{jlug}
-\usecolortheme{jlug}
+\usefonttheme{jlug} 	% Fonts
 
-% disable navigation
-\setbeamertemplate{navigation symbols}{}
+% navigation / footnotes
+\setbeamertemplate{navigation symbols}{%
+	\ifnum\thepage>1\relax% Not on the front page
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		\insertauthor \quad | \quad %
+		\insertframenumber \quad
+	\fi
+}
 
 % cutomise blocks
-\setbeamertemplate{blocks}[rounded][shadow=true]  
+\setbeamertemplate{blocks}[rounded][shadow=false]  
+
+% enumeration symbols
+\setbeamertemplate{items}[circle]
 
 \mode<all>
