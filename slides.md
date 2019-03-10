@@ -217,26 +217,6 @@ If you start working on something new
 ![Simple git workflow](pictures/02-git-commands.png){width=60%}
 Source: [3].
 
-## A simple git workflow
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-
-1. Init
-2. Stage / add
-3. Commit
-4. Repeat 1. and 2.
-5. Push
-
-:::
-::: {.column width="50%"}
-
-![Simple git workflow](pictures/01-workflow.png)
-Source: [3]
-
-:::
-::::::::::::::
-
 ## Working with others (1)
 
 :::::::::::::: {.columns}
@@ -367,6 +347,14 @@ A crowd-sourced review paper in machine learning.
 * authors accepted based on tracked contributions
 
 [Link](https://github.com/greenelab/deep-review)
+
+## Legal documents
+
+Tracking changes to German legislation
+
+![bundesgit](pictures/bundes-git.png){width=50%}
+
+[Link](https://github.com/bundestag/gesetze)
 
 ---
 # Hands-On
