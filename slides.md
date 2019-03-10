@@ -7,6 +7,50 @@ institute: "Center for International Development and Environmental Research"
 theme: jlug
 ---
 
+---
+
+# File versioning: Why?
+
+**What?**
+* Keeping track
+* Keep a copy
+* **Keep your work safe**
+
+Programme code, TeX and text documents, `.csv` data, ...
+
+::: notes
+
+Keep track and a copy of your files
+don't get mixed up or loose your progress
+like a better backup
+
+:::
+
+# What's wrong with...
+
+* E-Mails
+* Shared folders
+* USB sticks
+* Folders: `version1, version2, version3, ... versionFINAL, versionLAST`
+* Dropbox/Google Drive/Nextcloud
+  
+**Nothing. But we can do better.**
+
+# The right tool to ...
+
+... do the job.
+
+**Which files?**
+
+* Source code
+* Thesis/Papers
+* any other plain-text file
+
+::: notes
+if you are working on text documents (Word, OpenOffice, ...)
+or other non-plain text files, then it is probably not the right tool.
+:::
+
 # Motivation
 
 
@@ -24,7 +68,7 @@ theme: jlug
 ::: {.column width="50%"}
 
 ![Git logo](pictures/1920px-Git-logo.svg.png)
-Source: [1]
+Source: [^1]
 
 :::
 ::::::::::::::
@@ -56,10 +100,15 @@ Source: [1]
 ## It offers
 
 * Versioning of files
-* Log history
-* File comparisons
+  * Go back in time (history)
+  * Compare file versinos
+  * Who changed what?
+  * .. And why?
 * Exchanging files
-* Combining changes
+* Collaborate:
+  * Combine changes
+  * Compare changes
+  * Avoid conflicting changes
 * Easy way to backup(*)
 
 (* For the talk we will assume that we always use a remote repository like GitHub or GitLab.)
@@ -79,7 +128,8 @@ Source: [1]
 * Open Source
     - Try it for free
     - Great ecosystem: Clients, Onlinerepositories, Community
-    - Persistent (no vendor dependency)
+    - Persistent (no vendor lock-in)
+* Easy to move repositories (`git clone` -- that's it)
 * Millions of users world wide
 * It is alive
 
@@ -93,8 +143,21 @@ Source: [1]
   * It is an living system supporting this product
   * Will probably life longer than the storage medium you might be using git on
 
-::: 
+:::
 
+## How to use?
+
+* Local client
+* Interfaces:
+  * Command line
+  * GUIs
+    * GitHub Desktop (works with any git)
+    * gitGUI (included with `git` distro)
+    * emacs / vim extensions available
+* See: [git GUI Clients](https://git-scm.com/downloads/guis/)
+
+---
+ 
 # Terminology
 
 * [gitglossary](https://git-scm.com/docs/gitglossary)
@@ -145,9 +208,16 @@ If you start working on something new
 * Separate completed work (your main branch) from developing content (other branches)
 * Fast and simple way to keep things organised
 
+---
+
 # How does it work?
 
-# A simple git workflow
+## A simple git workflow
+
+![Simple git workflow](pictures/02-git-commands.png){width=60%}
+Source: [3].
+
+## A simple git workflow
 
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
@@ -155,7 +225,7 @@ If you start working on something new
 1. Init
 2. Stage / add
 3. Commit
-4. Repet 1. and 2.
+4. Repeat 1. and 2.
 5. Push
 
 :::
@@ -167,11 +237,68 @@ Source: [3]
 :::
 ::::::::::::::
 
-# Working with others
+## Working with others (1)
 
-- Remote repositories
-- Multiple people working on same things
-- How to: same files, join changes
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+> **Avoid this**
+
+* Keep track
+* Keep it structured
+* Don't forget anything
+
+:::
+::: {.column width="50%"}
+
+![Source: [5].](pictures/phd-comics_not-final-doc.gif){width=75%}
+
+:::
+::::::::::::::
+
+## common repository (1)
+
+Setup a remote repository for everyone to access
+![1-setup-repo](pictures/collab_1-setup-repo.png)
+
+## Issues
+
+Report problems, discuss possible changes
+![2-issues](pictures/collab_2-issues.png)
+
+## Pull requests
+
+Suggest, discuss and combine changes
+![3-PRs](pictures/collab_3-prs.png)
+
+## Branches
+
+Contain features and major changes before finalising them in the `master` branch
+![4-branches](pictures/collab_4-branches.png)
+
+::: notes
+* Branches are a way of organising your work.
+* If you are working on your own little project, you might not need to use branches at all...
+* ... but they help in organising things.
+* You bundle multiple changes / commits and put them in a new branch.
+* For code that is when you want to for example try out something new
+  * Don't comment out stuff and recompile
+  * Create a new branch (it is fast and cheap in terms of ressources!)
+  * Make the changes to the code, you can also commit them
+  * Just try out the new code
+  * If you don't like it, delete the branch and go back to your old one (your previous changes don't need to be manually reversed)
+  * Or check what else you changed and keep an overview - especially when changing at a lot of places your code.
+* When collaborating with others, you normally want to work on your own branch and only when finishing a piece of work you want to share with others, you then merge your branch into the `master` branch of all collaborators.
+:::
+
+## Working with others (2)
+
+- Remote repositories/Platforms (GitHub, GitLab, ...)
+- 1 branch per person/topic
+- Ask to include changes (Pull requests)
+  - Review
+  - Merge changes from multiple people
+- Be happy
 
 ## More features: Branches and merging
 
@@ -190,6 +317,58 @@ Source: [3]
     * Not so interesting for small projects
     * This is were you should set certain standards (naming, commit behaviour, content checking/code testing, ...)
 
+## Good practices
+
+* Commit often
+* Good commit messages
+* Use branches for changes, merge in master when change is complete
+* Discuss workflow (commit, test/review, merge) with team
+
+---
+
+# Sweet Examples
+
+## the obvious
+
+**`numpy` library for Python**
+
+On GitHub:
+
+* Code
+* Issues & discussion
+* Code suggestions (Pull requests)
+* Documentation
+
+[Link](https://github.com/numpy/numpy)
+
+## the small (and still obvious)
+
+**`atlite`, a Phython-based open source tool for energy system modeling.**
+
+* Code + ... (as w/ numpy)
+  
+**but also**
+* scientific discussion (science side of implementations)
+* access to different versions (reproducibility)
+* different groups contributing openly
+
+[Link](https://github.com/FRESNA/atlite)
+
+## the crowd-science'd
+
+**Deep review**
+A crowd-sourced review paper in machine learning.
+
+* Written on GitHub
+* Contributions openly accepted
+* Contributions per author tracked
+* Redacted versions and revisions available
+* 123 pages with 36 accepted authors
+* authors accepted based on tracked contributions
+
+[Link](https://github.com/greenelab/deep-review)
+
+---
 # Hands-On
 
 ## Installation and Instructions
@@ -258,7 +437,11 @@ Source: [4].
 >        "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
 >        "goddamn idiotic truckload of sh*t": when it breaks
 
-# Take away
+--- 
+
+# Conclusion
+
+## Take away
 
 git with GitHub/GitLab means
 
@@ -273,9 +456,17 @@ git with GitHub/GitLab means
 
 **TODO: Insert CC-BY-SA license**
 
-# References
+**TODO: Special thanks to Julika Mimkes SUB Göttingen**
+
+
+## References
 
 [1]: By Jason Long - (http://git-scm.com/downloads/logos), CC BY 3.0.
+
 [2]: see [List of version-control software](https://en.wikipedia.org/wiki/List_of_version-control_software#Open_source_3).
-[3]: Tom Blount, (http://tomblount.co.uk/version-control/#/3/2), CC-BY-NC-SA.
+
+[3]: Tom Blount, (http://tomblount.co.uk/version-control/), CC-BY-NC-SA.
+
 [4]: Marco Leong, (https://hikaruzone.wordpress.com/2015/10/06/in-case-of-fire-1-git-commit-2-git-push-3-leave-building/), CC-BY-NC 4.0.
+
+[5]: jorge cham (http://phdcomics.com/comics/archive.php?comicid=1531).
