@@ -13,11 +13,11 @@ theme: jlug
 
 ### Programme code, TeX, text documents, `.csv` data, ...
 
-* Keeping track
+* Keeping track  
  
-* Keep a copy
+* Keep a copy  
  
-* **Keep your work safe**
+* Keep your work safe  
 
 ::: notes
 
@@ -27,19 +27,20 @@ like a better backup
 
 :::
 
-## What's wrong with...
+## What's wrong with
 
 ### This works, right?
-* E-Mails
-* Shared folders
-* USB sticks
-* Folders:
-`version1, version2, version3, ... versionFINAL, versionLAST`
-* Dropbox/Google Drive/Nextcloud
+* E-Mail  
+* Shared folders  
+* USB sticks  
+* Folder structure
+`version1, version2, version3, ... versionFINAL, versionLAST`  
+* Dropbox/Google Drive/Nextcloud  
 
 # Let's be honest: It doesn't
 
 ::: notes
+
 * If you have ever started off as a new PhD student
     and wanted to continue your predecessors work
 * If you are trying to find recording and previous
@@ -48,6 +49,7 @@ like a better backup
     and you make daily changes.
 
 It's bad. But what else is there to it?
+
 :::
 
 ## We can do better
@@ -57,11 +59,11 @@ It's bad. But what else is there to it?
 
 ### Use the right tool for the job
 
-* Source code
+* Source code  
  
-* Thesis/Papers
+* Thesis/Papers  
  
-* any other plain-text file
+* any other plain-text file  
 
 ::::
 :::: column
@@ -72,6 +74,7 @@ It's bad. But what else is there to it?
 :::
 
 ::: notes
+
 There are many tools out there from people who faced these problems.
 They are great tools for exactly these tasks.
 For this case, there is a better tool we can use.
@@ -85,6 +88,7 @@ For collaborating on text documents (Word, OpenOffice, ...)
 or other non-plain text files, then it is probably not the right tool.
 But you can at least include them in the process, although you can only use
 some of the essential features, but not all of them.
+
 :::
 
 # Git
@@ -110,7 +114,7 @@ some of the essential features, but not all of them.
 ::::
 :::
 
-Sources: [Wikipedia][6] and [git-scm][1].
+Sources: [Wikipedia][6], [git-scm][1].
 
 ## Git can be
 
@@ -128,7 +132,7 @@ Sources: [Wikipedia][6] and [git-scm][1].
 ::::
 :::: column{width=40%}
 
-![](pictures/1920px-Git-logo.svg.png){width=70%}
+![](pictures/1920px-Git-logo.svg.png){width=30%}
 
 [Source: git-scm][1]
 
@@ -254,13 +258,15 @@ Source: [Tom Blount][3].
 ## Working with others (1)
 
 ::: columns
-:::: columns
+:::: column
 
-> **Avoid this**
+> Avoid this -->
 
-* Keep track
-* Keep it structured
-* Don't forget anything
+* Keep track  
+ 
+* Keep it structured  
+
+* Don't forget anything  
 
 ::::
 :::: column
@@ -520,7 +526,7 @@ Source: [Marco Leong][4].
 > From https://en.wikipedia.org/wiki/Git
 > Naming
 >
->Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[23] [24] The man page describes Git as "the stupid content tracker".[25] The readme file of the source code elaborates further:[26]
+>Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'." The man page describes Git as "the stupid content tracker". The readme file of the source code elaborates further:
 >
 >    The name "git" was given by Linus Torvalds when he wrote the very first version. He described the tool as "the stupid content tracker" and the name as (depending on your way):
 >
