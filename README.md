@@ -1,37 +1,71 @@
-# Creating `beamer` presentations from Markdown using `pandoc`
+# Hands-On (Hacky Hour @ DPG spring meeting 2019, Rostock)
 
-## Requirements
 
-* Installed pandoc
-* Installed LaTeX distribution
-* Markdown document for the presentations
 
-## Good to have 
+## Installation
 
-* A good markdown editor
-* A pdf viewer with automatic reload capabilities
-* Some type of versioning method, e.g. `git` plays nicely with markdown!
-* Know your desired [beamer theme](https://hartwork.org/beamer-theme-matrix/)
-    - Note: the `jlug` beamer theme is specific for the [Justus-Liebig-University Giessen](http://www.uni-giessen.de/index.html) and may not be used by non-members.
+You can either complete this tutorial online using only [GitHub](https://github.com) (you need to create a free account) or use a local repository.
+For using a local repository, you need a local git installation.
+* Installation instructions either [here](https://git-scm.com/downloads)
+* Or [GitHub Desktop](https://desktop.github.com/), a simple GUI for Mac/Windows with everything included.
 
-## How to use
+## Let's do this
 
-1. Write your markdown file [1] and save it, see the template [slides.md](./slides.md).
-2. Convert the slides to a pdf using the command in the command line / shell:\
-    ``` pandoc -t beamer slides.md -o ../slides.pdf ```
-3. Open the [slides.pdf](./slides.pdf) and enjoy.
+Depending whether you use GitHub only online or a local installation, go to different websites:
+* If you are only using GitHub online, follow [this Git Hello World! example](https://guides.github.com/ activities/hello-world/).
+* If you are using git locally:
 
-### Customisation
+## Overview of common commands / actions
 
-* Using a different beamer (theme) and `xelatex`:\
-    ``` pandoc -t beamer slides.md -V theme:(theme) --pdf-engine=xelatex -o slides.pdf ```
-* Using the `jlug` theme (a bit hacky currently):
-    1. Navigate into the folder [theme/](./theme/)
-    2. ``` pandoc -t beamer ../slides.md -V theme:jlug --pdf-engine=xelatex -o ../slides.pdf ```
+TODO External link?
 
-## Ressources used for this project
+```
+git status
+git add
+git commit -m "(Message)"
+git push
+git pull
+git branch
+git checkout
+git log
+git diff
+git merge
+```
 
-* [1] See [Producing slide shows with pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) for available options
-* [2] [Building pretty slides using Markdown and pandoc](https://avalz.it/2017/02/01/build-pretty-slides/)  by AvalZ 
-* [3] [Talks with LaTeX Beamer, written in Markdown](https://nval.andreasherten.de/2016/01/26/latex-beamer-with-markdown.html) by Andreas Herten
-* [4] [Better-looking LaTeX/Beamer slides](https://kbroman.wordpress.com/2013/10/07/better-looking-latexbeamer-slides/) by Karls Borman
+## A basic workflow
+TODO
+
+## Branching and merging
+
+1. Create a branch
+2. Make changes inside the branch
+3. Stage and commit these changes
+4. Push branch to remote
+5. See changes on remote
+6. Switch to master branch
+7. Also make some changes here to the same file
+    * Avoid merge conflicts by only changing different lines
+    * Or see what a merge conflict can look like: Change the same content as in 2. but do different changes
+8. Merge the new branch and the master
+9.  Push local master branch
+10. Look at the local (or remote) commit history
+
+
+## GitHub and remote repositories
+TODO
+
+## Exploring, Issues, Pullrequests
+TODO
+
+## Online ressources
+
+* [Think git - a great introduction to git and it's capabilities](http://kdheepak.com/think-git)
+* [Git it - an interactive tutorial](https://github.com/jlord/git-it-electron/releases)
+* [Git Reference](https://git-scm.com/docs)
+* [eBook: Pro Git](https://git-scm.com/book/en/v2)
+* [A minimalistic git guide](http://rogerdudler.github.io/git-guide/)
+* [Collection of ressources for learning Git](http://try.github.io/)
+
+### Some more appetiseres
+
+* [TechBlog: Git: The reproducibility tool scientists love to hate](http://blogs.nature.com/naturejobs/2018/06/11/git-the-reproducibility-tool-scientists-love-to-hate/)
