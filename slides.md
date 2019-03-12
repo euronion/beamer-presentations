@@ -567,19 +567,19 @@ Graphics and text for which not other attribution is given are licensed unter Cr
 ## References
 
 [1]: http://git-scm.com/downloads/logos
-    "By Jason Long - (), CC BY 3.0."
+    "By Jason Long, CC BY 3.0"
 
 [2]: https://en.wikipedia.org/wiki/List_of_version-control_software#Open_source_3
-    "see this list of version-control software."
+    "see this list of version-control software"
 
 [3]: http://tomblount.co.uk/version-control/
-    "Tom Blount, CC-BY-NC-SA."
+    "Tom Blount, CC-BY-NC-SA"
 
 [4]: https://hikaruzone.wordpress.com/2015/10/06/in-case-of-fire-1-git-commit-2-git-push-3-leave-building/
-    "Marco Leong, CC-BY-NC 4.0.
+    "Marco Leong, CC-BY-NC 4.0"
 
 [5]: http://phdcomics.com/comics/archive.php?comicid=1531
-    "jorge cham2
+    "jorge cham"
 
 [6]: https://en.wikipedia.org/w/index.php?title=Git&oldid=885739135
     "Wikipedia - Git"
