@@ -7,11 +7,10 @@ institute: "Center for International Development and Environmental Research"
 theme: jlug
 ---
 
----
+# Intro
 
-# File versioning: Why?
+## File versioning: Why?
 
-**What?**
 * Keeping track
 * Keep a copy
 * **Keep your work safe**
@@ -26,49 +25,74 @@ like a better backup
 
 :::
 
-# What's wrong with...
+## What's wrong with...
 
 * E-Mails
 * Shared folders
 * USB sticks
 * Folders: `version1, version2, version3, ... versionFINAL, versionLAST`
 * Dropbox/Google Drive/Nextcloud
-  
-**Nothing. But we can do better.**
 
-# The right tool to ...
+**It works, right?**
 
-... do the job.
+# Let's be honest: It doesn't
 
-**Which files?**
+::: notes
+* If you have ever started off as a new PhD student
+    and wanted to continue your predecessors work
+* If you are trying to find recording and previous
+    versions of the code you used for your paper a couple of months ago
+* If you are trying to work on the same simulation code (e.g.)
+    and you make daily changes.
+
+It's bad. But what else is there to it?
+:::
+
+## We can do better
+
+Use the right tool to do the job.  
+
+::: notes
+There are many tools out there from people who faced these problems.
+They are great tools for exactly these tasks.
+For this case, there is a better tool we can use.
+So let's use the right tool to do this job.
+:::
+
+## Which files?
 
 * Source code
 * Thesis/Papers
 * any other plain-text file
 
 ::: notes
-if you are working on text documents (Word, OpenOffice, ...)
+It doesn't matter if you are working on source code for R, Python, Fortran or
+Matlab. It could also be your thesis or a paper you are preparing in latex.
+Or even this presentation - you'll get a link later.
+
+For collaborating on text documents (Word, OpenOffice, ...)
 or other non-plain text files, then it is probably not the right tool.
+But you can at least include them in the process, although you can only use
+some of the essential features, but not all of them.
 :::
 
 # Motivation
 
-
 ## What do we ~~git~~ get?
 
 :::::::::::::: {.columns}
-::: {.column width="50%"}
+::: {.column width="70%"}
 
-> "Git is a distributed version-control system for tracking changes in source code during software development.
-> It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
-> Its goals include speed, data integrity, and support for distributed, non-linear workflows."
-> (Wikipedia)
+> "Git ... version-control system ... tracking changes ... .
+> ... designed for coordinating work ... in any set of files.
+> ... goals include speed, data integrity, and support ... non-linear workflows."
+(Source: [Wikipedia][6])
 
 :::
-::: {.column width="50%"}
+::: {.column width="30%"}
 
-![Git logo](pictures/1920px-Git-logo.svg.png)
-Source: [^1]
+![Git logo](pictures/1920px-Git-logo.svg.png){width=70%}
+Source: [git-scm][1]
 
 :::
 ::::::::::::::
@@ -76,7 +100,7 @@ Source: [^1]
 ## So?
 
 :::::::::::::: {.columns}
-::: {.column width="50%"}
+::: {.column width="70%"}
 
 Git can be
 
@@ -84,15 +108,17 @@ Git can be
 * powerfull
 * complex
 
+
 but most of all
+
 
 * **helpful**
 
 :::
-::: {.column width="50%"}
+::: {.column width="30%"}
 
-![Git logo](pictures/1920px-Git-logo.svg.png)
-Source: [1]
+![Git logo](pictures/1920px-Git-logo.svg.png){width=70%}
+Source: [git-scm][1]
 
 :::
 ::::::::::::::
@@ -156,7 +182,6 @@ Source: [1]
     * emacs / vim extensions available
 * See: [git GUI Clients](https://git-scm.com/downloads/guis/)
 
----
  
 # Terminology
 
@@ -208,14 +233,14 @@ If you start working on something new
 * Separate completed work (your main branch) from developing content (other branches)
 * Fast and simple way to keep things organised
 
----
 
 # How does it work?
 
 ## A simple git workflow
 
-![Simple git workflow](pictures/02-git-commands.png){width=60%}
-Source: [3].
+![](pictures/02-git-commands.png){width=60%}
+
+Source: [Tom Blount][3].
 
 ## Working with others (1)
 
@@ -231,30 +256,62 @@ Source: [3].
 :::
 ::: {.column width="50%"}
 
-![Source: [5].](pictures/phd-comics_not-final-doc.gif){width=75%}
+![](pictures/phd-comics_not-final-doc.gif){width=80%}
+
 
 :::
 ::::::::::::::
 
 ## common repository (1)
 
+::: columns
+:::: column
 Setup a remote repository for everyone to access
-![1-setup-repo](pictures/collab_1-setup-repo.png)
+::::
+
+:::: column
+![](pictures/collab_1-setup-repo.png)
+::::
+:::
 
 ## Issues
 
+::: columns
+:::: column
 Report problems, discuss possible changes
-![2-issues](pictures/collab_2-issues.png)
+::::
+
+:::: column
+![](pictures/collab_2-issues.png)
+::::
+::: 
 
 ## Pull requests
 
+::: columns
+
+:::: column
 Suggest, discuss and combine changes
-![3-PRs](pictures/collab_3-prs.png)
+::::
+
+:::: column
+![](pictures/collab_3-prs.png)
+::::
+
+:::
 
 ## Branches
 
-Contain features and major changes before finalising them in the `master` branch
-![4-branches](pictures/collab_4-branches.png)
+::: columns
+:::: column
+Features and major changes before finalising them in the `master` branch
+::::
+
+:::: column
+![](pictures/collab_4-branches.png)
+::::
+
+:::
 
 ::: notes
 * Branches are a way of organising your work.
@@ -304,77 +361,115 @@ Contain features and major changes before finalising them in the `master` branch
 * Use branches for changes, merge in master when change is complete
 * Discuss workflow (commit, test/review, merge) with team
 
----
 
 # Sweet Examples
 
 ## the obvious
 
-**`numpy` library for Python**
+`numpy` library for Python.
 
-On GitHub:
-
+GitHub:
 * Code
 * Issues & discussion
 * Code suggestions (Pull requests)
 * Documentation
 
-[Link](https://github.com/numpy/numpy)
+[Link: numpy](https://github.com/numpy/numpy)
 
 ## the small (and still obvious)
 
-**`atlite`, a Phython-based open source tool for energy system modeling.**
+`atlite`, open source tool for energy system modeling.
 
+GitHub:
 * Code + ... (as w/ numpy)
   
-**but also**
-* scientific discussion (science side of implementations)
-* access to different versions (reproducibility)
+also:
+* scientific discussion
+* different versions (reproducibility)
 * different groups contributing openly
 
-[Link](https://github.com/FRESNA/atlite)
+[Link: atlite](https://github.com/FRESNA/atlite)
 
 ## the crowd-science'd
 
-**Deep review**
-A crowd-sourced review paper in machine learning.
+`Deep review`, a crowd-sourced review paper.
 
 * Written on GitHub
 * Contributions openly accepted
 * Contributions per author tracked
-* Redacted versions and revisions available
+* Redacted versions and revisions
 * 123 pages with 36 accepted authors
 * authors accepted based on tracked contributions
 
-[Link](https://github.com/greenelab/deep-review)
+[Link: Deep review](https://github.com/greenelab/deep-review)
+
+::: notes
+deep-review is a crowd-sourced review paper in for machine learning.
+
+Is a nice example of new ways to write especially review paper but also
+other work.
+
+After given out the call, that they will be writing a review paper,
+the initiating authors accepted contributions to the GitHub repository
+from anyone. They reviewd the contributions and included them.
+This way, the review spanned a great deal of topics with in the end 123 pages and 36 accepted authors.
+
+The accepted authors were accepted based on their track record:
+As the contributions per author can be tracked, any author passing a defined
+threshold was accepted.
+
+This is a great way of also making transparent, which author has how much
+contributed to a publication.
+
+:::
 
 ## Legal documents
 
-Tracking changes to German legislation
+Tracking changes to German legislation ("Bundes-Git")
 
-![bundesgit](pictures/bundes-git.png){width=50%}
+![](pictures/bundes-git.png){width=50%}
 
-[Link](https://github.com/bundestag/gesetze)
+[Link: Bundesgit](https://github.com/bundestag/gesetze)
 
----
+
+::: notes
+While not for itself as interesting for probably most of the people here,
+this is another nice example of what we can use Git and GitHub for.
+
+This repository contains many of laws and regulations valid in Germany.
+The changes to each legilative document can be tracked, attributed to politicians and compared across a wide range of years.
+
+Similiar things exist for people publishing their music on GitHub,
+so you can watch how over time their songs developed ;-) .
+
+Maybe you can also think of creative ways to use Git?
+I have personally also heared of some universities trying to use git for
+submitting, correcting and reviewing lab reports for students.
+:::
+
 # Hands-On
 
 ## Installation and Instructions
+
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
-![QR code to GitHub repository](pictures/qr-code.png)
-(https://github.com/euronion/beamer-presentations/blob/2019/dpg-rostock/material/README.md)
-**Put a link to the repository with a README.md here**
+
+![](pictures/qr-code.png){width=60%}
+
+https://t1p.de/0mzx
+
 :::
 ::: {.column width="50%"}
+
 ![In case of fire](pictures/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png)
-Source: [4].
+Source: [Marco Leong][4].
+
 :::
 ::::::::::::::
 
 # Story to tell
 
-## Advantages
+# Advantages
 
 * Track history of file changes
 * Document motivation for changes
@@ -387,7 +482,7 @@ Source: [4].
 * Mercurial (e.g. Bitbucket)
 * Subversion SVN
 * Bazaar
-* Many more [2]
+* Many more [(see this list)][2]
 
 **Use whatever works for you, but use something and stick w/ it**
 
@@ -416,7 +511,7 @@ Source: [4].
 > From https://en.wikipedia.org/wiki/Git
 > Naming
 >
->Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[23][24] The man page describes Git as "the stupid content tracker".[25] The readme file of the source code elaborates further:[26]
+>Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[23] [24] The man page describes Git as "the stupid content tracker".[25] The readme file of the source code elaborates further:[26]
 >
 >    The name "git" was given by Linus Torvalds when he wrote the very first version. He described the tool as "the stupid content tracker" and the name as (depending on your way):
 >
@@ -425,36 +520,57 @@ Source: [4].
 >        "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
 >        "goddamn idiotic truckload of sh*t": when it breaks
 
---- 
 
-# Conclusion
+# Take away
 
-## Take away
+## git + GitHub/GitLab
 
-git with GitHub/GitLab means
+::: columns
 
-* More efficient file keeping
-* Easier file exchange
-* Less mistakes combining
+:::: column
+
+* better file versioning
+* better file exchange
+* Less mistakes
 * Better collaboration
-* Traceability
+* Traceability and accountability
 * Great new ways to work together
 
-> Use version control (git) - The future will thank you.
+::::
 
-**TODO: Insert CC-BY-SA license**
+:::: column
 
-**TODO: Special thanks to Julika Mimkes SUB Göttingen**
+Special thanks to Julika Mimkes SUB Göttingen
 
+::::
+:::
+
+>> Use version control (git) - The future will thank you.
+
+## License
+
+Unless otherwise stated and other licenses apply (c) Johannes Hampp, 2019.
+
+Graphics and text for which not other attribution is given are licensed unter Creative Commons Attribution 4.0 International Licence (CC BY 4.0).
+
+![](pictures/cc-by.png)
 
 ## References
 
-[1]: By Jason Long - (http://git-scm.com/downloads/logos), CC BY 3.0.
+[1]: http://git-scm.com/downloads/logos
+    "By Jason Long - (), CC BY 3.0."
 
-[2]: see [List of version-control software](https://en.wikipedia.org/wiki/List_of_version-control_software#Open_source_3).
+[2]: https://en.wikipedia.org/wiki/List_of_version-control_software#Open_source_3
+    "see this list of version-control software."
 
-[3]: Tom Blount, (http://tomblount.co.uk/version-control/), CC-BY-NC-SA.
+[3]: http://tomblount.co.uk/version-control/
+    "Tom Blount, CC-BY-NC-SA."
 
-[4]: Marco Leong, (https://hikaruzone.wordpress.com/2015/10/06/in-case-of-fire-1-git-commit-2-git-push-3-leave-building/), CC-BY-NC 4.0.
+[4]: https://hikaruzone.wordpress.com/2015/10/06/in-case-of-fire-1-git-commit-2-git-push-3-leave-building/
+    "Marco Leong, CC-BY-NC 4.0.
 
-[5]: jorge cham (http://phdcomics.com/comics/archive.php?comicid=1531).
+[5]: http://phdcomics.com/comics/archive.php?comicid=1531
+    "jorge cham2
+
+[6]: https://en.wikipedia.org/w/index.php?title=Git&oldid=885739135
+    "Wikipedia - Git"
