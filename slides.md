@@ -11,11 +11,13 @@ theme: jlug
 
 ## File versioning: Why?
 
-* Keeping track
-* Keep a copy
-* **Keep your work safe**
+### Programme code, TeX, text documents, `.csv` data, ...
 
-Programme code, TeX and text documents, `.csv` data, ...
+* Keeping track
+ 
+* Keep a copy
+ 
+* **Keep your work safe**
 
 ::: notes
 
@@ -27,13 +29,13 @@ like a better backup
 
 ## What's wrong with...
 
+### This works, right?
 * E-Mails
 * Shared folders
 * USB sticks
-* Folders: `version1, version2, version3, ... versionFINAL, versionLAST`
+* Folders:
+`version1, version2, version3, ... versionFINAL, versionLAST`
 * Dropbox/Google Drive/Nextcloud
-
-**It works, right?**
 
 # Let's be honest: It doesn't
 
@@ -50,22 +52,31 @@ It's bad. But what else is there to it?
 
 ## We can do better
 
-Use the right tool to do the job.  
+::: columns
+:::: column
+
+### Use the right tool for the job
+
+* Source code
+ 
+* Thesis/Papers
+ 
+* any other plain-text file
+
+::::
+:::: column
+![](pictures/phd-comics_not-final-doc.gif){width=90%}
+
+[Source: PhD comics.][5]
+::::
+:::
 
 ::: notes
 There are many tools out there from people who faced these problems.
 They are great tools for exactly these tasks.
 For this case, there is a better tool we can use.
 So let's use the right tool to do this job.
-:::
 
-## Which files?
-
-* Source code
-* Thesis/Papers
-* any other plain-text file
-
-::: notes
 It doesn't matter if you are working on source code for R, Python, Fortran or
 Matlab. It could also be your thesis or a paper you are preparing in latex.
 Or even this presentation - you'll get a link later.
@@ -76,70 +87,70 @@ But you can at least include them in the process, although you can only use
 some of the essential features, but not all of them.
 :::
 
-# Motivation
+# Git
 
-## What do we ~~git~~ get?
+## What do we ~~git~~ get
 
-:::::::::::::: {.columns}
-::: {.column width="70%"}
+::: columns
+:::: column{width=60%}
 
-> "Git ... version-control system ... tracking changes ... .
-> ... designed for coordinating work ... in any set of files.
-> ... goals include speed, data integrity, and support ... non-linear workflows."
-(Source: [Wikipedia][6])
+> "Git  
+> ... version-control system  
+> ... tracking changes ... .  
+> ... designed for coordinating work  
+> ... in any set of files.  
+> ... goals include speed, data integrity ...  
+> support ... non-linear workflows."  
 
+::::
+:::: column{width=40%}
+
+![](pictures/1920px-Git-logo.svg.png){width=70%}
+
+::::
 :::
-::: {.column width="30%"}
 
-![Git logo](pictures/1920px-Git-logo.svg.png){width=70%}
-Source: [git-scm][1]
+Sources: [Wikipedia][6] and [git-scm][1].
 
-:::
-::::::::::::::
+## Git can be
 
-## So?
-
-:::::::::::::: {.columns}
-::: {.column width="70%"}
-
-Git can be
+::: columns
+:::: column{width=60%}
 
 * great
+ 
 * powerfull
+ 
 * complex
-
-
-but most of all
-
 
 * **helpful**
 
+::::
+:::: column{width=40%}
+
+![](pictures/1920px-Git-logo.svg.png){width=70%}
+
+[Source: git-scm][1]
+
+::::
 :::
-::: {.column width="30%"}
 
-![Git logo](pictures/1920px-Git-logo.svg.png){width=70%}
-Source: [git-scm][1]
+## Offers
 
-:::
-::::::::::::::
-
-## It offers
-
-* Versioning of files
-  * Go back in time (history)
+* File versioning
+  * History: View and go back in time
   * Compare file versinos
-  * Who changed what?
-  * .. And why?
-* Exchanging files
-* Collaborate:
-  * Combine changes
-  * Compare changes
+  * Blame: Who changed what?
+  * Messages: And why?
+* Exchanging files and collaborate
+  * Combine changes (merge)
+  * Compare changes (diff)
   * Avoid conflicting changes
-* Easy way to backup(*)
-
-(* For the talk we will assume that we always use a remote repository like GitHub or GitLab.)
+* Easy way to backup
 
 ::: notes
+
+(Backup: For the talk we will assume that we always use a remote repository like GitHub or GitLab.)
 
 * Remote repository where you keep a copy of your files
 * Hosted options available, famous ones e.g. GitHub and GitLab
@@ -188,8 +199,6 @@ Source: [git-scm][1]
 * [gitglossary](https://git-scm.com/docs/gitglossary)
 
 ## Commit
-
-
 
 * Commit = Snapshot = Version
 * commit = save the current state as a snapshot
@@ -244,8 +253,8 @@ Source: [Tom Blount][3].
 
 ## Working with others (1)
 
-:::::::::::::: {.columns}
-::: {.column width="50%"}
+::: columns
+:::: columns
 
 > **Avoid this**
 
@@ -253,14 +262,14 @@ Source: [Tom Blount][3].
 * Keep it structured
 * Don't forget anything
 
+::::
+:::: column
+
+![](pictures/phd-comics_not-final-doc.gif){width=60%}
+[Source: PhD comics.][5]
+
+::::
 :::
-::: {.column width="50%"}
-
-![](pictures/phd-comics_not-final-doc.gif){width=80%}
-
-
-:::
-::::::::::::::
 
 ## common repository (1)
 
@@ -451,21 +460,21 @@ submitting, correcting and reviewing lab reports for students.
 
 ## Installation and Instructions
 
-:::::::::::::: {.columns}
-::: {.column width="50%"}
+::: columns
+:::: column{width="50%"}
 
 ![](pictures/qr-code.png){width=60%}
 
 https://t1p.de/0mzx
 
-:::
-::: {.column width="50%"}
+::::
+:::: column{width="50%"}
 
 ![In case of fire](pictures/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png)
 Source: [Marco Leong][4].
 
+::::
 :::
-::::::::::::::
 
 # Story to tell
 
