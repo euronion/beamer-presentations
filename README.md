@@ -59,13 +59,21 @@ TODO
 
 ## Online ressources
 
+### Read this
+
 * [Think git - a great introduction to git and it's capabilities](http://kdheepak.com/think-git)
+* [Good commit messages](https://chris.beams.io/posts/git-commit/)  
+
+### Where you can learn more
+
+* [A minimalistic git guide](http://rogerdudler.github.io/git-guide/)
+* [In-depth git best practices](https://sethrobertson.github.io/GitBestPractices/)
 * [Git it - an interactive tutorial](https://github.com/jlord/git-it-electron/releases)
 * [Git Reference](https://git-scm.com/docs)
 * [eBook: Pro Git](https://git-scm.com/book/en/v2)
-* [A minimalistic git guide](http://rogerdudler.github.io/git-guide/)
 * [Collection of ressources for learning Git](http://try.github.io/)
 
 ### Some more appetiseres
 
 * [TechBlog: Git: The reproducibility tool scientists love to hate](http://blogs.nature.com/naturejobs/2018/06/11/git-the-reproducibility-tool-scientists-love-to-hate/)
+* [List of version-control software](https://en.wikipedia.org/wiki/List_of_version-control_software#Open_source_3)
