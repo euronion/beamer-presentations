@@ -96,20 +96,21 @@ some of the essential features, but not all of them.
 ## What do we ~~git~~ get
 
 ::: columns
-:::: column{width=60%}
+:::: column
 
-> "Git  
-> ... version-control system  
-> ... tracking changes ... .  
-> ... designed for coordinating work  
-> ... in any set of files.  
-> ... goals include speed, data integrity ...  
-> support ... non-linear workflows."  
+![](pictures/1920px-Git-logo.svg.png){width=50%}
 
 ::::
-:::: column{width=40%}
 
-![](pictures/1920px-Git-logo.svg.png){width=70%}
+:::: column
+
+"Git  
+... version-control system  
+... tracking changes ... .  
+... for coordinating work  
+... any set of files.  
+... speed, data integrity  
+... support non-linear workflows."  
 
 ::::
 :::
@@ -119,22 +120,20 @@ Sources: [Wikipedia][6], [git-scm][1].
 ## Git can be
 
 ::: columns
-:::: column{width=60%}
+:::: column
 
-* great
- 
-* powerfull
- 
-* complex
+![](pictures/1920px-Git-logo.svg.png){width=50%}
 
-* **helpful**
+[Source: git-scm][1].
 
 ::::
-:::: column{width=40%}
 
-![](pictures/1920px-Git-logo.svg.png){width=30%}
+:::: column
 
-[Source: git-scm][1]
+* great  
+* powerfull  
+* complex  
+* **helpful**
 
 ::::
 :::
@@ -154,7 +153,17 @@ Sources: [Wikipedia][6], [git-scm][1].
 
 ::: notes
 
-(Backup: For the talk we will assume that we always use a remote repository like GitHub or GitLab.)
+What does it offer?
+File versioning, so it allows you to look at different versions of files,
+see how they changed in the past. Compare versions to find out what was changed.
+And determined who did the change. If they are good you can find out, why they changed
+it, because they left a good message with the change behind.
+
+If you use a repository others can access as well, like a hosted repository,
+then your code will be easier to (re-) discover -- maybe after 5 or 10 years.
+At least it will be more difficult to get lost, especially when a PhD student leaves your group.
+Stuff is easier to find again and documented -- isn't this what we usually want to embrace as scientists?
+Aktivierung durch Publikumsfrage: Eingaben durch Publikum. wer schon gearbeitet? Erfahrungen? Wieder?
 
 * Remote repository where you keep a copy of your files
 * Hosted options available, famous ones e.g. GitHub and GitLab
@@ -164,124 +173,166 @@ Sources: [Wikipedia][6], [git-scm][1].
 
 :::
 
-## Things to note
+## Good to keep in mind
 
-* Open Source
-    - Try it for free
-    - Great ecosystem: Clients, Onlinerepositories, Community
-    - Persistent (no vendor lock-in)
-* Easy to move repositories (`git clone` -- that's it)
+::: columns
+
+:::: column
+
+![](pictures/google-trends-git.png)
+
+Source: Google Trends.
+
+::::
+:::: column
+
+#### Open Source
+
+* Ecosystem: Clients, Onlinerepositories, Community
+* Available & Reliable
+* Easy to move repositories:  
+    (`git clone` -- that's it)
 * Millions of users world wide
 * It is alive
 
+::::
+:::
+
 ::: notes
 
-* Reap the benefits of open source software
+Git is Open Source software, reap the benefits of open source software.
+That is, you can be sure that it will be accessible for you in the future,
+the software is nearly 15yrs. established and has a large community and good ecosystem.
+
 * Well established in different communities (primarily SW development)
 * It is alive:
   * There is no vendor dependency
-  * No dependency on single persons
+  * No dependency on single persons or a single vendor
+  * Makes it reliable and prevents vendor lockin
+  * Also in the future will be alive
+  * (and if only because many people depend on it)
+  * I don't know how the DFG / archiving guidelines see it for 10yrs.
+    archiving duties, but that's just a side note and not the sole reason to use it
   * It is an living system supporting this product
   * Will probably life longer than the storage medium you might be using git on
 
 :::
 
-## How to use?
+## Using it daily
 
-* Local client
-* Interfaces:
-  * Command line
-  * GUIs
-    * GitHub Desktop (works with any git)
-    * gitGUI (included with `git` distro)
-    * emacs / vim extensions available
-* See: [git GUI Clients](https://git-scm.com/downloads/guis/)
+* Local client  
+
+* Command line  
+ 
+* GUIs  
+  * GitHub Desktop (works with any git)
+  * gitGUI (included with `git` distro)
+  * emacs / vim extensions available
+
+[Link: git GUI Clients](https://git-scm.com/downloads/guis/)
 
  
-# Terminology
+# Terminology \ (to help you get started)
 
-* [gitglossary](https://git-scm.com/docs/gitglossary)
 
 ## Commit
 
-* Commit = Snapshot = Version
-* commit = save the current state as a snapshot
+* Commit = Snapshot = Version  
+
+* Current state saved as snapshot
 
 ## Repository
 
+* Your files  
+
+* Git files  
+
+* Locally or remote  
+
 This is where it all happens and is stored: `git init`
 
-* Your files
-* Git files
-* Locally or remote
+## Remote (repository)
 
-## Remote - Just another repository
+* Just another repository  
 
-* Like your local repository
-  * A colleagues computer
-  * A pen drive
-  * An institutes server
+* Like your local repository  
+    (local computer, pen drive, server, ...)  
+
 * Easy places to start:
   * [GitLab](https://gitlab.com/)
-  * [GitHub](https://github.com/)
+  * [GitHub](https://github.com/)  
+ 
 * To interact:
-  * `push`: changes from your local repository to a remote repository
-  * `pull`: changes from a remote repository into your local repository
-  * Pull request: Ask someone to merge your changes into their repository
+  * `push`: changes from local --> remote
+  * `pull`: changes from remote --> local
+  * "Pull request": Ask someone include your change into their repository
+
+## Branches
+
+Alternativ story:
+If you start working on something new
+
+* Try stuff out  
+ 
+* Easily combine it later: Partially or fully  
+ 
+* Separate finished work ("main") from development  
+
+* Fast and simple: Keep things organised
 
 ## Log
 
 Written history of all your commits (versions): `git log`
 
-* Revert changes
-* Access a previous commit / version
+* Revert changes  
+
+* Access a previous commit / version  
+
 * Compare commits for changes
 
-## Branches
 
-Taking a different route at a crossroad:
-If you start working on something new
+[Link: gitglossary for more](https://git-scm.com/docs/gitglossary)
 
-* You can easily combine ("merge") it later: Partially or completley
-* Separate completed work (your main branch) from developing content (other branches)
-* Fast and simple way to keep things organised
-
-
-# How does it work?
+# How it works
 
 ## A simple git workflow
 
 ![](pictures/02-git-commands.png){width=60%}
 
-Source: [Tom Blount][3].
+[Source: Tom Blount][3].
 
 ## Working with others (1)
+
+
 
 ::: columns
 :::: column
 
-> Avoid this -->
+> Avoid this -->  
 
-* Keep track  
+### Challenges
+
+* Keeping track  
  
-* Keep it structured  
+* Keeping a structured process  
 
 * Don't forget anything  
 
 ::::
 :::: column
 
-![](pictures/phd-comics_not-final-doc.gif){width=60%}
-[Source: PhD comics.][5]
+![](pictures/phd-comics_not-final-doc.gif)
 
 ::::
 :::
 
-## common repository (1)
+
+## Working with others (2)
 
 ::: columns
 :::: column
-Setup a remote repository for everyone to access
+1. Setup a common repository \
+    (GitHub, GitLab, ...)
 ::::
 
 :::: column
@@ -289,11 +340,11 @@ Setup a remote repository for everyone to access
 ::::
 :::
 
-## Issues
+## Working with others (3)
 
 ::: columns
 :::: column
-Report problems, discuss possible changes
+2. Issues: Report problems, discuss possible changes
 ::::
 
 :::: column
@@ -301,12 +352,12 @@ Report problems, discuss possible changes
 ::::
 ::: 
 
-## Pull requests
+## Working with others (4)
 
 ::: columns
 
 :::: column
-Suggest, discuss and combine changes
+3. Pull Requests: Suggest, discuss and combine changes
 ::::
 
 :::: column
@@ -315,11 +366,12 @@ Suggest, discuss and combine changes
 
 :::
 
-## Branches
+## Working with others (5)
 
 ::: columns
 :::: column
-Features and major changes before finalising them in the `master` branch
+4. Use branches for features and major changes:  
+   only after finalising merge them to your `master` branch
 ::::
 
 :::: column
@@ -343,39 +395,61 @@ Features and major changes before finalising them in the `master` branch
 * When collaborating with others, you normally want to work on your own branch and only when finishing a piece of work you want to share with others, you then merge your branch into the `master` branch of all collaborators.
 :::
 
-## Working with others (2)
+## Rules when collaborating
 
-- Remote repositories/Platforms (GitHub, GitLab, ...)
-- 1 branch per person/topic
-- Ask to include changes (Pull requests)
-  - Review
-  - Merge changes from multiple people
-- Be happy
+### You should have some, e.g.
 
-## More features: Branches and merging
+* 1 branch per person/topic  
 
-- Branches: Here we do our work
-- Merging: For joining changes
-- Merge conflicts: Happen rarely, but can be manually resolved
-    * This is where good commit messages are helpful
-    * Might want to check back with the person responsible for the changes
+* have maintainers, not only contributors  
 
-## Staying in control
+* Merge conflicts can happen  
 
-- Pull request: "I changed something, please adapt it"
+* --> Look for best practices  
+
+* **Be happy**  
+
+::: notes
+
+Review code suggestions before including them.
+Don't allow everyone to add code as they want,
+but have a few responsible maintainers, which decide if changes
+work with the existing content or need to be adjusted first.
+
+* Merge conflicts: Can happen, when multiple people work on the same
+    content, but don't worry. Git will help you with getting around this as well.
+    Trust the tool ;-).
+
+* Staying in control for larger projects:
+  * not as important for small collaborations (but always a good idea)
+  * for pull request: "I changed something, please adapt it"
     * Maintainers can decide if it is included or not
-- Growing and larger projects:
-    * A few persons in charge of maintaining
-    * Not so interesting for small projects
-    * This is were you should set certain standards (naming, commit behaviour, content checking/code testing, ...)
+  * Growing and larger projects:
+* This is were you should set certain standards (naming, commit behaviour, content checking/code testing, ...)
 
-## Good practices
+:::
 
-* Commit often
-* Good commit messages
-* Use branches for changes, merge in master when change is complete
-* Discuss workflow (commit, test/review, merge) with team
 
+
+## Some Good practices
+
+* Commit often, rebase later  
+
+* [Good commit messages! (Link)](https://chris.beams.io/posts/git-commit/)  
+
+* Changes in branches, `master` when change is ready  
+
+* Have a workflow -- and follow it  
+  (commit, test/review, merge)
+
+::: notes
+
+In the document in the git repository there are also linked some good
+and best practices for using git. Some are pretty general, so I suggest
+looking at them briefly. Just write them down on a post it to remember
+them daily.
+
+:::
 
 # Sweet Examples
 
@@ -471,7 +545,7 @@ submitting, correcting and reviewing lab reports for students.
 
 ![](pictures/qr-code.png){width=60%}
 
-https://t1p.de/0mzx
+https://t1p.de/irlq
 
 ::::
 :::: column{width="50%"}
@@ -482,63 +556,9 @@ Source: [Marco Leong][4].
 ::::
 :::
 
-# Story to tell
-
-# Advantages
-
-* Track history of file changes
-* Document motivation for changes
-* Hosted repository:
-  * Code is easier to (re-) discover
-  * ... and will probably not get lost (w/ leaving PhD students)
-
-## Similar software
-
-* Mercurial (e.g. Bitbucket)
-* Subversion SVN
-* Bazaar
-* Many more [(see this list)][2]
-
-**Use whatever works for you, but use something and stick w/ it**
-
-
-- Abgrenzung gegen andere Systeme
-- Aktivierung durch Publikumsfrage
-    * Eingaben durch Publikum. wer schon gearbeitet? Erfahrungen? Wieder?
-
-- Vorteile
-    * Wieder auffindbar
-    * Dokumentiert
-
-- Lokale Repositories und internet-Repositories?
-
-- Projekte vorstellen:
-    * Wer nutzt git? Panda/Cern, OpenMod
-    * Firmen/Unternehmen
-    * Verschiedene Branchen
-
-- Best practices, further reading
-- Wie stabil ist git / etabliert / gut?
-    * Open Source
-    * 15+ yrs entwickelt + stabil
-
-
-> From https://en.wikipedia.org/wiki/Git
-> Naming
->
->Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'." The man page describes Git as "the stupid content tracker". The readme file of the source code elaborates further:
->
->    The name "git" was given by Linus Torvalds when he wrote the very first version. He described the tool as "the stupid content tracker" and the name as (depending on your way):
->
->        random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of "get" may or may not be relevant.
->        stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.
->        "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
->        "goddamn idiotic truckload of sh*t": when it breaks
-
-
 # Take away
 
-## git + GitHub/GitLab
+## git (+ GitHub/GitLab)
 
 ::: columns
 
@@ -562,6 +582,17 @@ Special thanks to Julika Mimkes SUB Göttingen
 
 >> Use version control (git) - The future will thank you.
 
+::: notes
+
+There are also other systems than git.
+In the end it boils down to the recommendation:
+Use a version control software(!) system that works for you.
+I suggest you select a system and try it out for yourself for a few days.
+Then look back, select a system you liked and stick with it.
+Or just learn to use git.
+
+:::
+
 ## License
 
 Unless otherwise stated and other licenses apply (c) Johannes Hampp, 2019.
@@ -574,9 +605,6 @@ Graphics and text for which not other attribution is given are licensed unter Cr
 
 [1]: http://git-scm.com/downloads/logos
     "By Jason Long, CC BY 3.0"
-
-[2]: https://en.wikipedia.org/wiki/List_of_version-control_software#Open_source_3
-    "see this list of version-control software"
 
 [3]: http://tomblount.co.uk/version-control/
     "Tom Blount, CC-BY-NC-SA"
