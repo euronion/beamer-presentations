@@ -538,20 +538,19 @@ submitting, correcting and reviewing lab reports for students.
 
 # Hands-On
 
-## Installation and Instructions
+## Tutorials / Instructions
 
 ::: columns
-:::: column{width="50%"}
+:::: column
 
-![](pictures/qr-code.png){width=60%}
-
-https://t1p.de/irlq
+![](pictures/qr-code.png){width=60%}  
+https://t1p.de/xdvc
 
 ::::
-:::: column{width="50%"}
+:::: column
 
-![In case of fire](pictures/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png)
-Source: [Marco Leong][4].
+![In case of fire](pictures/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png)  
+[Source: Marco Leong][4].
 
 ::::
 :::
@@ -560,27 +559,19 @@ Source: [Marco Leong][4].
 
 ## git (+ GitHub/GitLab)
 
-::: columns
+* better file versioning  
 
-:::: column
+* better file exchange  
 
-* better file versioning
-* better file exchange
-* Less mistakes
-* Better collaboration
-* Traceability and accountability
-* Great new ways to work together
+* Less mistakes  
 
-::::
+* Better collaboration  
 
-:::: column
+* Traceability and accountability  
 
-Special thanks to Julika Mimkes SUB Göttingen
+**Use version control (git) - The future will thank you.**  
 
-::::
-:::
-
->> Use version control (git) - The future will thank you.
+*Special thanks to Julika Mimkes SUB Göttingen*
 
 ::: notes
 
@@ -595,7 +586,8 @@ Or just learn to use git.
 
 ## License
 
-Unless otherwise stated and other licenses apply (c) Johannes Hampp, 2019.
+Unless otherwise stated and other licenses apply  
+(c) Johannes Hampp, 2019.
 
 Graphics and text for which not other attribution is given are licensed unter Creative Commons Attribution 4.0 International Licence (CC BY 4.0).
 
