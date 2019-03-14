@@ -458,10 +458,14 @@ them daily.
 `numpy` library for Python.
 
 GitHub:
-* Code
-* Issues & discussion
-* Code suggestions (Pull requests)
-* Documentation
+
+* Code  
+
+* Issues & discussion  
+
+* Code suggestions (Pull requests)  
+
+* Documentation  
 
 [Link: numpy](https://github.com/numpy/numpy)
 
@@ -470,12 +474,16 @@ GitHub:
 `atlite`, open source tool for energy system modeling.
 
 GitHub:
-* Code + ... (as w/ numpy)
+
+* Code + ... (as w/ numpy)  
   
-also:
-* scientific discussion
-* different versions (reproducibility)
-* different groups contributing openly
+also: 
+
+* scientific discussion  
+
+* different versions (reproducibility)  
+
+* different groups contributing openly  
 
 [Link: atlite](https://github.com/FRESNA/atlite)
 
