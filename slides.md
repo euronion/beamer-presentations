@@ -538,14 +538,27 @@ submitting, correcting and reviewing lab reports for students.
 
 # Hands-On
 
-## Tutorials / Instructions
+## Disclaimer
+
+::: columns
+:::: column
+Give it a shot.  
+I am happy to help, however...
+::::
+:::: column
+![](pictures/xkcd-git.png){width=80%}
+
+[Source: xkcd.][7]
+::::
+:::
+
+
+## Instructions here
 
 ::: columns
 :::: column
 
 ![](pictures/qr-code.png){width=60%}  
-https://t1p.de/xdvc
-
 ::::
 :::: column
 
@@ -554,6 +567,9 @@ https://t1p.de/xdvc
 
 ::::
 :::
+
+Short Link: https://t1p.de/xdvc  
+Long  Link: https://github.com/euronion/beamer-presentations
 
 # Take away
 
@@ -593,7 +609,8 @@ Graphics and text for which not other attribution is given are licensed unter Cr
 
 ![](pictures/cc-by.png)
 
-## References
+
+
 
 [1]: http://git-scm.com/downloads/logos
     "By Jason Long, CC BY 3.0"
@@ -609,3 +626,6 @@ Graphics and text for which not other attribution is given are licensed unter Cr
 
 [6]: https://en.wikipedia.org/w/index.php?title=Git&oldid=885739135
     "Wikipedia - Git"
+
+[7]: https://xkcd.com/1597/
+    "Randall Munroe - XKCD - Git, CC-BY-NC 2.5"
