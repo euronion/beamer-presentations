@@ -23,11 +23,11 @@
 
 ### Customisation
 
-* Using a different beamer (theme) and `xelatex`:\
-    ``` pandoc -t beamer slides.md -V theme:(theme) --pdf-engine=xelatex -o slides.pdf ```
-* Using the `jlug` theme (a bit hacky currently):
-    1. Navigate into the folder [theme/](./theme/)
-    2. ``` pandoc -t beamer ../slides.md -V theme:jlug --pdf-engine=xelatex -o ../slides.pdf ```
+* Using a theme with `xelatex`  
+    ``` pandoc -t beamer slides.md --pdf-engine=xelatex -o slides.pdf ```   
+  The theme is determined via the `.yaml` meta data in the `slides.md` file.
+* Option to make `#` heading as intermediate title slides  
+    ```pandoc -t beamer slides.md --pdf-engine=xelatex --slide-level 2 -o slides.pdf```
 
 ## Ressources used for this project
 
