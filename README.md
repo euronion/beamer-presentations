@@ -17,7 +17,7 @@
 ## How to use
 
 1. Write your markdown file [1] and save it, see the template [slides.md](./slides.md).
-2. Convert the slides to a pdf using the command in the command line / shell:\
+2. Convert the slides to a pdf using the command in the command line / shell:  
     ``` pandoc -t beamer slides.md -o ../slides.pdf ```
 3. Open the [slides.pdf](./slides.pdf) and enjoy.
 
